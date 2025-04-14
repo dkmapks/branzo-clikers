@@ -74,3 +74,11 @@ setInterval(() => {
 
 renderShop();
 updateScore();
+
+// Rejestracja Service Workera
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker
+        .register('./service-worker.js')
+        .then(() => console.log('Service Worker zarejestrowany!'))
+        .catch(error => console.error('Błąd rejestracji Service Workera:', error));
+}
