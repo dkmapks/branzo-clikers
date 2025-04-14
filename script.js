@@ -25,7 +25,7 @@ function buyItem(index) {
     if (score >= item.cost) {
         score -= item.cost;
         item.effect();
-        item.cost = Math.floor(item.cost * 1.5); // zwiększ koszt
+        item.cost = Math.floor(item.cost * 1.5); // Zwiększ koszt
         renderShop();
         updateScore();
     }
@@ -44,7 +44,8 @@ function renderShop() {
     });
 }
 
-clickButton.addEventListener("click", () => {
+clickButton.addEventListener("click", (event) => {
+    event.preventDefault(); // Zapobiega domyślnemu zachowaniu
     score += upgrades.clickPower;
     updateScore();
 });
