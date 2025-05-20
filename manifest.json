@@ -1,0 +1,15 @@
+{
+  "name": "Kalkulator Zarobków",
+  "short_name": "ZarobkiApp",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#f1f3f6",
+  "theme_color": "#007bff",
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/2491/2491001.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
