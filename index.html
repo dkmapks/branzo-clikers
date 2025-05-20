@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kalkulator Zarobków</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.json" />
+</head>
+<body>
+  <h1>Kalkulator Zarobków</h1>
+
+  <div class="app-section" id="youtube">
+    <h2>YouTube</h2>
+    <label>Wyświetlenia: <input type="number" id="ytViews" /></label>
+    <label>CPM (zł/1000 wyświetleń): <input type="number" id="ytCPM" /></label>
+    <label>Podatek (%): <input type="number" id="ytTax" /></label>
+    <button onclick="calculateYT()">Oblicz</button>
+    <p>Zysk: <span id="ytResult">0</span> zł</p>
+  </div>
+
+  <div class="app-section" id="tiktok">
+    <h2>TikTok</h2>
+    <label>Wyświetlenia: <input type="number" id="ttViews" /></label>
+    <label>CPM (zł/1000 wyświetleń): <input type="number" id="ttCPM" /></label>
+    <label>Podatek (%): <input type="number" id="ttTax" /></label>
+    <button onclick="calculateTT()">Oblicz</button>
+    <p>Zysk: <span id="ttResult">0</span> zł</p>
+  </div>
+
+  <div class="app-section" id="instagram">
+    <h2>Instagram</h2>
+    <label>Ilość postów: <input type="number" id="igPosts" /></label>
+    <label>Stawka za post (zł): <input type="number" id="igPerPost" /></label>
+    <label>Podatek (%): <input type="number" id="igTax" /></label>
+    <button onclick="calculateIG()">Oblicz</button>
+    <p>Zysk: <span id="igResult">0</span> zł</p>
+  </div>
+
+  <div class="app-section" id="spotify">
+    <h2>Spotify</h2>
+    <label>Odtworzenia: <input type="number" id="spPlays" /></label>
+    <label>CPM (zł/1000 odtworzeń): <input type="number" id="spCPM" /></label>
+    <label>Podatek (%): <input type="number" id="spTax" /></label>
+    <button onclick="calculateSP()">Oblicz</button>
+    <p>Zysk: <span id="spResult">0</span> zł</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
