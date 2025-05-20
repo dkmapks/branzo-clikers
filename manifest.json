@@ -1,0 +1,15 @@
+{
+  "name": "PKO Konto App",
+  "short_name": "PKO",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#2962FF",
+  "icons": [
+    {
+      "src": "assets/logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}
